@@ -14,7 +14,7 @@ Installation:
 Install the required libraries by running the following command:
 pip install -r requirements.txt
 
-#Usage:
+# Usage:
 Collect training data by running the "collect_data.py" script. This will record video input from the default camera and save it to the "data" folder. The script will prompt the user to press the "Q" key to start recording and save 100 frames for each gesture. The default number of classes is 3, but this can be changed by modifying the "number_of_classes" variable.
 Preprocess the data by running the "preprocess_data.py" script. This will extract the hand landmarks using the MediaPipe library and save the preprocessed data to a pickle file named "data.pickle" in the project directory.
 Train the model by running the "train_model.py" script. This will split the preprocessed data into training and testing sets, train a Random Forest Classifier model, and save the model to a pickle file named "model.p" in the project directory.
